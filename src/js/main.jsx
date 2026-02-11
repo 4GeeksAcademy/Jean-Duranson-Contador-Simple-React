@@ -1,18 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-
-//Bootstrap
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '../styles/index.css';
+import SimpleCounter from './components/simpleCounter';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap"
 
-// index.css'
-import '../styles/index.css'
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// components
-import Home from './components/Home';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+root.render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+    <SimpleCounter />
+  </React.StrictMode>
+);
